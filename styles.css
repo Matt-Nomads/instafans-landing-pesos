@@ -23,7 +23,7 @@ body {
   position: relative;
   z-index: 2;
   max-width: 600px;
-  padding: 3rem 0 3rem 4vw;
+  padding: 3rem 0 3rem 7vw;
   text-align: left;
   align-items: flex-start;
   display: flex;
@@ -324,7 +324,7 @@ textarea {
   }
   .hero-content {
     max-width: 90vw;
-    padding: 2rem 0 2rem 2vw;
+    padding: 2rem 0 2rem 5vw;
   }
   .logo {
     width: 120px;
@@ -342,7 +342,7 @@ textarea {
   }
   .hero-content {
     max-width: 95vw;
-    padding: 1.5rem 0 1.5rem 1vw;
+    padding: 1.5rem 0 1.5rem 3vw;
   }
   .logo {
     width: 180px;
@@ -360,7 +360,7 @@ textarea {
     margin-bottom: 20px;
   }
   .hero-content {
-    padding: 1rem 0 1rem 0.5vw;
+    padding: 1rem 0 1rem 2vw;
   }
   .logo {
     width: 120px;
