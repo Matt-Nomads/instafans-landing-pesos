@@ -35,12 +35,20 @@ body {
   margin-bottom: 2.5rem;
   display: block;
 }
-.hero h1 {
-  font-size: 2.8rem;
+.hero h1, .hero .gradient-text {
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 900;
-  color: #6c2eb7;
-  margin-bottom: 1rem;
-  text-shadow: none;
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: lowercase;
+  background: linear-gradient(90deg, #6c2eb7 0%, #ff4ecb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+  padding: 0;
 }
 .hero p {
   font-size: 1.3rem;
@@ -354,6 +362,9 @@ textarea {
   }
 }
 @media (max-width: 900px) {
+  .hero h1, .hero .gradient-text {
+    font-size: 2.5rem;
+  }
   .hero-influencer {
     width: 400px;
     right: -20px;
@@ -378,7 +389,9 @@ textarea {
   }
 }
 @media (max-width: 600px) {
-  .hero h1 { font-size: 1.2rem; }
+  .hero h1, .hero .gradient-text {
+    font-size: 1.5rem;
+  }
   .hero-influencer {
     width: 200px;
     right: -10px;
