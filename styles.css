@@ -179,6 +179,135 @@ textarea {
   background: linear-gradient(90deg, #6c2eb7 0%, #ff4ecb 100%);
   transform: scale(1.03);
 }
+.section {
+  padding: 64px 0 48px 0;
+  background: #fff;
+  text-align: center;
+}
+.fitness-discovery {
+  background: linear-gradient(90deg, #ff4ecb 0%, #6c2eb7 100%);
+  color: #fff;
+}
+.fitness-discovery h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 16px #6c2eb799;
+}
+.fitness-discovery p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.section-cta {
+  display: inline-block;
+  background: #fff;
+  color: #6c2eb7;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 32px;
+  padding: 0.9rem 2.2rem;
+  text-decoration: none;
+  box-shadow: 0 4px 24px #ff4ecb66, 0 2px 8px #6c2eb799;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  margin-bottom: 1rem;
+}
+.section-cta:hover {
+  background: #6c2eb7;
+  color: #fff;
+  transform: scale(1.05);
+}
+.fitness-earnings {
+  background: #f7eaff;
+}
+.fitness-earnings h2 {
+  color: #6c2eb7;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.fitness-earnings p {
+  color: #222;
+  font-size: 1.1rem;
+}
+.fitness-freedom {
+  background: #fff;
+}
+.fitness-freedom h2 {
+  color: #ff4ecb;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.fitness-freedom p {
+  color: #222;
+  font-size: 1.1rem;
+}
+.fitness-og {
+  background: linear-gradient(90deg, #6c2eb7 0%, #ff4ecb 100%);
+  color: #fff;
+}
+.fitness-og h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 16px #ff4ecb99;
+}
+.fitness-og p {
+  font-size: 1.1rem;
+  color: #fff;
+}
+.fitness-newsletter {
+  background: #f7eaff;
+}
+.fitness-newsletter h2 {
+  color: #6c2eb7;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.fitness-newsletter p {
+  color: #222;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.newsletter-form input[type="email"] {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border-radius: 32px;
+  border: 1px solid #d1c4e9;
+  font-size: 1rem;
+  background: #fff;
+  color: #222;
+}
+.newsletter-form button {
+  background: linear-gradient(90deg, #ff4ecb 0%, #6c2eb7 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 32px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.newsletter-form button:hover {
+  background: linear-gradient(90deg, #6c2eb7 0%, #ff4ecb 100%);
+  transform: scale(1.05);
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+}
 @media (max-width: 900px) {
   .hero-influencer {
     width: 400px;
@@ -205,5 +334,18 @@ textarea {
   .logo {
     width: 80px;
     margin-bottom: 1rem;
+  }
+  .section {
+    padding: 36px 0 24px 0;
+  }
+  .container {
+    padding: 0 0.5rem;
+  }
+  .fitness-discovery h2,
+  .fitness-earnings h2,
+  .fitness-freedom h2,
+  .fitness-og h2,
+  .fitness-newsletter h2 {
+    font-size: 1.2rem;
   }
 } 
