@@ -30,7 +30,8 @@ body {
   flex-direction: column;
 }
 .logo {
-  width: 180px;
+  width: 260px;
+  max-width: 90vw;
   margin-bottom: 2.5rem;
   display: block;
 }
@@ -344,7 +345,7 @@ textarea {
     padding: 1.5rem 0 1.5rem 1vw;
   }
   .logo {
-    width: 120px;
+    width: 180px;
     margin-bottom: 1.5rem;
   }
 }
@@ -362,7 +363,7 @@ textarea {
     padding: 1rem 0 1rem 0.5vw;
   }
   .logo {
-    width: 80px;
+    width: 120px;
     margin-bottom: 1rem;
   }
   .section {
