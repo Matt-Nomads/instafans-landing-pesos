@@ -326,6 +326,15 @@ textarea {
   text-shadow: none;
   display: inline-block;
 }
+.solid-hero-text {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 1.05;
+  color: #6c2eb7;
+  letter-spacing: -1px;
+  display: inline-block;
+}
 @media (max-width: 1200px) {
   .hero-influencer {
     width: 600px;
@@ -364,6 +373,9 @@ textarea {
   .gradient-text {
     font-size: 2.2rem;
   }
+  .solid-hero-text {
+    font-size: 2.2rem;
+  }
 }
 @media (max-width: 600px) {
   .hero h1 { font-size: 1.2rem; }
@@ -396,6 +408,9 @@ textarea {
     font-size: 1.2rem;
   }
   .gradient-text {
+    font-size: 1.3rem;
+  }
+  .solid-hero-text {
     font-size: 1.3rem;
   }
 } 
