@@ -9,7 +9,7 @@ body {
   min-height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   overflow: hidden;
 }
 .hero-bg {
@@ -21,9 +21,12 @@ body {
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 500px;
-  padding: 3rem 2rem 3rem 2rem;
+  max-width: 600px;
+  padding: 3rem 0 3rem 4vw;
   text-align: left;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
 }
 .logo {
   width: 180px;
@@ -66,10 +69,10 @@ body {
 }
 .hero-influencer {
   position: absolute;
-  right: 0;
-  bottom: -120px;
-  width: 700px;
-  max-width: 90vw;
+  right: -60px;
+  bottom: -220px;
+  width: 800px;
+  max-width: 70vw;
   z-index: 3;
   filter: drop-shadow(0 16px 60px #ff4ecb88) drop-shadow(0 4px 16px #6c2eb7cc);
   transform: rotate(-6deg) scale(1.18);
@@ -308,15 +311,30 @@ textarea {
   margin: 0 auto;
   padding: 0 1.2rem;
 }
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .hero-influencer {
-    width: 400px;
-    right: -30px;
-    bottom: -60px;
+    width: 600px;
+    right: -40px;
+    bottom: -160px;
   }
   .hero-content {
     max-width: 90vw;
-    padding: 2rem 1rem;
+    padding: 2rem 0 2rem 2vw;
+  }
+  .logo {
+    width: 120px;
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .hero-influencer {
+    width: 400px;
+    right: -20px;
+    bottom: -80px;
+  }
+  .hero-content {
+    max-width: 95vw;
+    padding: 1.5rem 0 1.5rem 1vw;
   }
   .logo {
     width: 120px;
@@ -330,7 +348,9 @@ textarea {
     right: -10px;
     bottom: -30px;
   }
-  .modal-content { padding: 1.2rem 0.5rem; }
+  .hero-content {
+    padding: 1rem 0 1rem 0.5vw;
+  }
   .logo {
     width: 80px;
     margin-bottom: 1rem;
