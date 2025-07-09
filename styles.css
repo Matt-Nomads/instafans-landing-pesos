@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #f7eaff;
+  color: #222;
+}
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, #ff4ecb 0%, #6c2eb7 100%);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  padding: 3rem 2rem 3rem 2rem;
+  text-align: left;
+}
+.logo {
+  width: 110px;
+  margin-bottom: 1.5rem;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 32px #6c2eb7cc, 0 2px 8px #ff4ecb99;
+}
+.hero h1 .highlight {
+  color: #ff4ecb;
+  text-shadow: 0 2px 16px #fff, 0 2px 8px #6c2eb7;
+}
+.hero p {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 2.2rem;
+  text-shadow: 0 2px 8px #6c2eb7aa;
+}
+.cta-btn {
+  background: linear-gradient(90deg, #ff4ecb 0%, #6c2eb7 100%);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 32px;
+  padding: 1.1rem 2.7rem;
+  cursor: pointer;
+  box-shadow: 0 6px 32px #ff4ecb66, 0 2px 8px #6c2eb799;
+  transition: background 0.2s, transform 0.2s;
+  letter-spacing: 1px;
+}
+.cta-btn:hover {
+  background: linear-gradient(90deg, #6c2eb7 0%, #ff4ecb 100%);
+  transform: scale(1.07);
+}
+.hero-influencer {
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  width: 480px;
+  max-width: 60vw;
+  z-index: 3;
+  filter: drop-shadow(0 12px 40px #ff4ecb88) drop-shadow(0 2px 8px #6c2eb7cc);
+  transform: rotate(-6deg) scale(1.08);
+  animation: jumpIn 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+}
+@keyframes jumpIn {
+  0% { opacity: 0; transform: translateY(80px) scale(0.8) rotate(-12deg); }
+  80% { opacity: 1; transform: translateY(-10px) scale(1.1) rotate(-7deg); }
+  100% { opacity: 1; transform: translateY(0) scale(1.08) rotate(-6deg); }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+}
+.modal.active {
+  display: flex;
+}
+.modal-content {
+  background: #fff;
+  color: #222;
+  border-radius: 18px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 400px;
+  width: 90vw;
+  box-shadow: 0 8px 40px #6c2eb799, 0 2px 8px #ff4ecb99;
+  position: relative;
+  animation: popin 0.3s;
+  border: 3px solid #ff4ecb;
+}
+@keyframes popin {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.close-btn {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #6c2eb7;
+  cursor: pointer;
+}
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #6c2eb7;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 1.2rem;
+}
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #6c2eb7;
+}
+input[type="text"], input[type="email"], select, textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #d1c4e9;
+  font-size: 1rem;
+  font-family: inherit;
+  margin-bottom: 0.2rem;
+  background: #f3eaff;
+  color: #222;
+  box-sizing: border-box;
+}
+textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+.creator-type {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.creator-type label {
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #ff4ecb 0%, #6c2eb7 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 32px;
+  padding: 0.9rem 0;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 24px #ff4ecb66, 0 2px 8px #6c2eb799;
+}
+.submit-btn:hover {
+  background: linear-gradient(90deg, #6c2eb7 0%, #ff4ecb 100%);
+  transform: scale(1.03);
+}
+@media (max-width: 900px) {
+  .hero-influencer {
+    width: 320px;
+    right: -30px;
+    bottom: -20px;
+  }
+  .hero-content {
+    max-width: 90vw;
+    padding: 2rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .hero h1 { font-size: 1.5rem; }
+  .hero-influencer {
+    width: 180px;
+    right: -10px;
+    bottom: -10px;
+  }
+  .modal-content { padding: 1.2rem 0.5rem; }
+} 
