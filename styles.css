@@ -313,6 +313,19 @@ textarea {
   margin: 0 auto;
   padding: 0 1.2rem;
 }
+.gradient-text {
+  background: linear-gradient(90deg, #6c2eb7 0%, #ff4ecb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  text-shadow: none;
+  display: inline-block;
+}
 @media (max-width: 1200px) {
   .hero-influencer {
     width: 600px;
@@ -348,6 +361,9 @@ textarea {
     width: 180px;
     margin-bottom: 1.5rem;
   }
+  .gradient-text {
+    font-size: 2.2rem;
+  }
 }
 @media (max-width: 600px) {
   .hero h1 { font-size: 1.2rem; }
@@ -378,5 +394,8 @@ textarea {
   .fitness-og h2,
   .fitness-newsletter h2 {
     font-size: 1.2rem;
+  }
+  .gradient-text {
+    font-size: 1.3rem;
   }
 } 
