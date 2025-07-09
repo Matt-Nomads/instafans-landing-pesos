@@ -26,8 +26,9 @@ body {
   text-align: left;
 }
 .logo {
-  width: 110px;
-  margin-bottom: 1.5rem;
+  width: 180px;
+  margin-bottom: 2.5rem;
+  display: block;
 }
 .hero h1 {
   font-size: 2.8rem;
@@ -66,13 +67,14 @@ body {
 .hero-influencer {
   position: absolute;
   right: 0;
-  bottom: -40px;
-  width: 480px;
-  max-width: 60vw;
+  bottom: -120px;
+  width: 700px;
+  max-width: 90vw;
   z-index: 3;
-  filter: drop-shadow(0 12px 40px #ff4ecb88) drop-shadow(0 2px 8px #6c2eb7cc);
-  transform: rotate(-6deg) scale(1.08);
+  filter: drop-shadow(0 16px 60px #ff4ecb88) drop-shadow(0 4px 16px #6c2eb7cc);
+  transform: rotate(-6deg) scale(1.18);
   animation: jumpIn 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+  pointer-events: none;
 }
 @keyframes jumpIn {
   0% { opacity: 0; transform: translateY(80px) scale(0.8) rotate(-12deg); }
@@ -179,21 +181,29 @@ textarea {
 }
 @media (max-width: 900px) {
   .hero-influencer {
-    width: 320px;
+    width: 400px;
     right: -30px;
-    bottom: -20px;
+    bottom: -60px;
   }
   .hero-content {
     max-width: 90vw;
     padding: 2rem 1rem;
   }
+  .logo {
+    width: 120px;
+    margin-bottom: 1.5rem;
+  }
 }
 @media (max-width: 600px) {
-  .hero h1 { font-size: 1.5rem; }
+  .hero h1 { font-size: 1.2rem; }
   .hero-influencer {
-    width: 180px;
+    width: 200px;
     right: -10px;
-    bottom: -10px;
+    bottom: -30px;
   }
   .modal-content { padding: 1.2rem 0.5rem; }
+  .logo {
+    width: 80px;
+    margin-bottom: 1rem;
+  }
 } 
