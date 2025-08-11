@@ -190,11 +190,11 @@ textarea {
 }
 .section {
   padding: 64px 0 48px 0;
-  background: #fff;
+  background: transparent;
   text-align: center;
 }
 .fitness-discovery {
-  background: linear-gradient(90deg, #fff 0%, #f7eaff 100%);
+  background: transparent;
   color: #222;
 }
 .fitness-discovery h2 {
