@@ -412,8 +412,7 @@ textarea {
   .fitness-discovery h2,
   .fitness-earnings h2,
   .fitness-freedom h2,
-  .fitness-og h2,
-  .fitness-newsletter h2 {
+  .fitness-og h2 {
     font-size: 1.2rem;
   }
   .gradient-text {
@@ -444,8 +443,7 @@ textarea {
 }
 
 .footer p {
-  color: #fff;
+  color: #222;
   font-size: 0.9rem;
   margin: 0;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 } 
