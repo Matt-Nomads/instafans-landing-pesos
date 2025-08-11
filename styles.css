@@ -1,9 +1,8 @@
 body {
   margin: 0;
   font-family: 'Montserrat', Arial, sans-serif;
-  background: linear-gradient(90deg, #fff 0%, #ff4ecb 60%, #6c2eb7 100%);
+  background: #f7eaff;
   color: #222;
-  min-height: 100vh;
 }
 .hero {
   position: relative;
@@ -191,11 +190,11 @@ textarea {
 }
 .section {
   padding: 64px 0 48px 0;
-  background: transparent;
+  background: #fff;
   text-align: center;
 }
 .fitness-discovery {
-  background: transparent;
+  background: linear-gradient(90deg, #fff 0%, #f7eaff 100%);
   color: #222;
 }
 .fitness-discovery h2 {
