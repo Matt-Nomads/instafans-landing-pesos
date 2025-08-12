@@ -68,6 +68,7 @@ body {
   box-shadow: 0 6px 32px #ff4ecb33, 0 2px 8px #6c2eb733;
   transition: background 0.2s, transform 0.2s;
   letter-spacing: 1px;
+  text-decoration: none !important;
 }
 .cta-btn:hover {
   background: linear-gradient(90deg, #6c2eb7 0%, #ff4ecb 100%);
