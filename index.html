@@ -1,29 +1,22 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instafans Campaign Landing - Simple</title>
+  <title>Instafans Campaign Landing</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
-      <img src="../IF_INST_LOGO_POS.svg" alt="Instafans logo" class="logo">
+      <img src="instafans-logo.svg" alt="Instafans logo" class="logo">
       <h1 class="gradient-text">Turn Your Fitness Into Fandom</h1>
       <p>Join Instafans and connect with a vibrant community. Sign up now to be the first to know about our campaign!</p>
-      
-      <!-- Simple email signup form -->
-      <form class="hero-signup-form" onsubmit="handleSimpleSignup(event)">
-        <div class="email-input-group">
-          <input type="email" placeholder="Enter your email address" required>
-          <button type="submit" class="hero-cta-btn">Sign Up Now</button>
-        </div>
-      </form>
+      <a href="https://instafans.com/signup" class="cta-btn" target="_blank">Sign Up Now</a>
     </div>
-    <img src="../fitness-influencer-2.png" alt="Fitness Influencer" class="hero-influencer">
+    <img src="fitness-influencer-2.png" alt="Fitness Influencer" class="hero-influencer">
   </section>
 
   <!-- Below the fold: Fitness-focused sections -->
@@ -31,7 +24,7 @@
     <div class="container">
       <h2>Grow Your Fitness Audience, Get Paid!</h2>
       <p>Showcase your workouts, routines, and fitness journey to a global audience. Instafans helps fitness creators get discovered and turn their passion into income.</p>
-      <a href="#hero" class="section-cta">Boost Your Fitness Profile</a>
+      <a href="https://instafans.com/signup" class="section-cta" target="_blank">Boost Your Fitness Profile</a>
     </div>
   </section>
 
@@ -41,19 +34,6 @@
     </div>
   </footer>
 
-  <script>
-    // Handle simple email signup
-    function handleSimpleSignup(event) {
-      event.preventDefault();
-      const email = event.target.querySelector('input[type="email"]').value;
-      
-      // For demo purposes - you can replace this with your actual email collection logic
-      alert('Thank you for signing up with: ' + email);
-      event.target.reset();
-      
-      // If you want to integrate with M-Director or other service, add the API call here
-      // Example: submitToMDirector({ email: email, name: '', country: '', creator_type: '', referral: '' });
-    }
-  </script>
+
 </body>
-</html> 
+</html>
